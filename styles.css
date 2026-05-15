@@ -1,0 +1,169 @@
+:root {
+  --bg: #0a0b10;
+  --surface: #141724;
+  --text: #f3f6ff;
+  --muted: #bac1d6;
+  --accent: #7c8dff;
+  --accent-2: #9c6bff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, sans-serif;
+  color: var(--text);
+  background: radial-gradient(circle at top, #1a2042 0%, var(--bg) 35%);
+  line-height: 1.6;
+}
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.9rem 1.2rem;
+  backdrop-filter: blur(10px);
+  background: rgba(10, 11, 16, 0.8);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.logo {
+  color: var(--text);
+  font-weight: 800;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: var(--text);
+}
+
+main {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.section {
+  padding: 4rem 0;
+}
+
+.hero {
+  text-align: left;
+  padding-top: 5rem;
+}
+
+.kicker {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+h1 {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  line-height: 1.15;
+  margin: 0.5rem 0 1.2rem;
+}
+
+h2 {
+  margin: 0 0 1rem;
+  font-size: 1.8rem;
+}
+
+.lead {
+  color: var(--muted);
+  max-width: 65ch;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.65rem 1rem;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  text-decoration: none;
+  font-weight: 700;
+  color: white;
+  background: linear-gradient(120deg, var(--accent), var(--accent-2));
+}
+
+.btn-small {
+  padding: 0.45rem 0.8rem;
+  font-size: 0.9rem;
+}
+
+.btn-outline {
+  background: transparent;
+  border-color: rgba(255, 255, 255, 0.22);
+}
+
+.hero-actions {
+  display: flex;
+  gap: 0.8rem;
+  margin-top: 1.5rem;
+}
+
+.two-col {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.card,
+.project,
+.contact {
+  background: var(--surface);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 1.2rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.project span {
+  color: var(--accent);
+  font-size: 0.9rem;
+}
+
+.chips {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  padding: 0;
+}
+
+.chips li {
+  padding: 0.4rem 0.7rem;
+  border-radius: 999px;
+  background: rgba(124, 141, 255, 0.17);
+  border: 1px solid rgba(124, 141, 255, 0.35);
+}
+
+@media (max-width: 800px) {
+  nav {
+    display: none;
+  }
+
+  .two-col,
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
