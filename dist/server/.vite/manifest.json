@@ -1,0 +1,110 @@
+{
+  "%23tanstack-start-plugin-adapters": {
+    "file": "assets/__23tanstack-start-plugin-adapters-Cwee5PKy.js",
+    "name": "__23tanstack-start-plugin-adapters",
+    "src": "%23tanstack-start-plugin-adapters",
+    "isDynamicEntry": true
+  },
+  "D:/Dev/my_portfolio/frontend/src/styles.css": {
+    "file": "assets/styles-DAh4OA0k.css",
+    "src": "D:/Dev/my_portfolio/frontend/src/styles.css"
+  },
+  "_router-Br8dLPMR.js": {
+    "file": "assets/router-Br8dLPMR.js",
+    "name": "router",
+    "isDynamicEntry": true,
+    "imports": [
+      "_server-DXjtf0V4.js"
+    ],
+    "dynamicImports": [
+      "src/routes/index.tsx?tsr-split=component"
+    ],
+    "assets": [
+      "assets/favicon-LoqnywjJ.svg",
+      "assets/styles-DAh4OA0k.css"
+    ]
+  },
+  "_server-DXjtf0V4.js": {
+    "file": "assets/server-DXjtf0V4.js",
+    "name": "server",
+    "isDynamicEntry": true,
+    "dynamicImports": [
+      "tanstack-start-manifest:v",
+      "_router-Br8dLPMR.js",
+      "src/start.ts",
+      "%23tanstack-start-plugin-adapters"
+    ]
+  },
+  "_worker-entry-B_wVwfc7.js": {
+    "file": "assets/worker-entry-B_wVwfc7.js",
+    "name": "worker-entry",
+    "dynamicImports": [
+      "_server-DXjtf0V4.js"
+    ]
+  },
+  "src/assets/avatar.png": {
+    "file": "assets/avatar-BPyFK9w5.png",
+    "src": "src/assets/avatar.png"
+  },
+  "src/assets/favicon.svg": {
+    "file": "assets/favicon-LoqnywjJ.svg",
+    "src": "src/assets/favicon.svg"
+  },
+  "src/assets/project-chatbot.jpg": {
+    "file": "assets/project-chatbot-BuExtdGg.jpg",
+    "src": "src/assets/project-chatbot.jpg"
+  },
+  "src/assets/project-data.jpg": {
+    "file": "assets/project-data-CXsEpQ4X.jpg",
+    "src": "src/assets/project-data.jpg"
+  },
+  "src/assets/project-neural.jpg": {
+    "file": "assets/project-neural-8f263Vs6.jpg",
+    "src": "src/assets/project-neural.jpg"
+  },
+  "src/assets/project-vision.jpg": {
+    "file": "assets/project-vision-DmUNyUNk.jpg",
+    "src": "src/assets/project-vision.jpg"
+  },
+  "src/routes/index.tsx?tsr-split=component": {
+    "file": "assets/index-CbNmOLtw.js",
+    "name": "index",
+    "src": "src/routes/index.tsx?tsr-split=component",
+    "isDynamicEntry": true,
+    "imports": [
+      "_server-DXjtf0V4.js",
+      "_router-Br8dLPMR.js"
+    ],
+    "assets": [
+      "assets/avatar-BPyFK9w5.png",
+      "assets/project-neural-8f263Vs6.jpg",
+      "assets/project-chatbot-BuExtdGg.jpg",
+      "assets/project-vision-DmUNyUNk.jpg",
+      "assets/project-data-CXsEpQ4X.jpg"
+    ]
+  },
+  "src/start.ts": {
+    "file": "assets/start-DN9EClJ5.js",
+    "name": "start",
+    "src": "src/start.ts",
+    "isDynamicEntry": true,
+    "imports": [
+      "_worker-entry-B_wVwfc7.js"
+    ]
+  },
+  "tanstack-start-manifest:v": {
+    "file": "assets/_tanstack-start-manifest_v-DdFqmXI-.js",
+    "name": "_tanstack-start-manifest_v",
+    "src": "tanstack-start-manifest:v",
+    "isDynamicEntry": true
+  },
+  "virtual:cloudflare/worker-entry": {
+    "file": "index.js",
+    "name": "index",
+    "src": "virtual:cloudflare/worker-entry",
+    "isEntry": true,
+    "imports": [
+      "_worker-entry-B_wVwfc7.js"
+    ]
+  }
+}
