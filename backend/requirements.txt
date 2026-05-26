@@ -1,0 +1,20 @@
+# Python backend runtime dependencies
+fastapi==0.136.1
+uvicorn==0.47.0
+pydantic==2.13.4
+python-dotenv==1.2.2
+numpy==2.4.5
+sentence-transformers==2.3.1
+tiktoken==0.13.0
+openai==2.37.0
+chromadb==1.5.9
+langchain-core==1.4.0
+langchain-openai==1.2.1
+langchain-protocol==0.0.15
+langchain-text-splitters==1.1.2
+langsmith==0.8.5
+
+# Optional / development dependencies
+pytest==7.4.4
+pytest-asyncio==0.23.3
+pytest-cov==4.1.0
